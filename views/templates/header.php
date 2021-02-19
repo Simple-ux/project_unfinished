@@ -13,18 +13,18 @@
      
 </head>
 <body>  
-  <header>   
+  <header >   
    
-  <div class="menu-logo">
-                <a href="<?=SITE_ROOT . "shop"?>"><img src="/assets/img/logo.png" class="logo-img"  alt=""></a>
-            </div>
-<container>
+ 
+
 
             
 
            
              <div class="menu">
-            
+             <div class="menu-logo">
+                <a href="<?=SITE_ROOT . "shop"?>"><img src="/assets/img/logo.png" class="logo-img"  alt=""></a>
+            </div>
 
             <div class="menu-item">
                 <a class="menu-a" href= "<?=SITE_ROOT . "new"?>"  data-action="tracks">
@@ -96,7 +96,7 @@
            
         
         
-</container> 
+
 
 
 

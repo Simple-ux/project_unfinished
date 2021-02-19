@@ -1,6 +1,6 @@
 
-<div class="wrapper">
-<footer>
+
+<footer >
 <div class="footer_heading">
     Контакты
 </div>
@@ -16,6 +16,6 @@
 
 
 </footer>
-</div>
+
 </body>  
 </html>

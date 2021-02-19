@@ -2,8 +2,10 @@ html{
     height: 100%;
 }
 body{
+    height: 100%;
     background-color: #F4F1F0;
-    
+
+   
     
     
 }
@@ -18,14 +20,7 @@ header{
 
    
 }
-container{
-    width: 50%;
-    
-    height: 50px;
-    display: flex;
-    flex-direction: row;
- 
-}
+
 .menu-logo{
     
     width: 267px;
@@ -174,6 +169,8 @@ footer{
     padding-left: 10%;
     padding-right: 10%;
     
+   
+    
     
     
     
@@ -221,8 +218,9 @@ color:black;
 .sneakers_item_price{
     padding-bottom: 40px;
 }
-main{
-    height: 100%;
+.main_empty{
+    height: calc(100vh - 200px);
+    overflow: auto;
 }
 .new_h1{
     display:flex;
