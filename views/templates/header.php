@@ -26,6 +26,11 @@
                 <a href="<?=SITE_ROOT . "shop"?>"><img src="/assets/img/logo.png" class="logo-img"  alt=""></a>
             </div>
 
+            <div class="menu-item home">
+                <a class="menu-a" href= "<?=SITE_ROOT . "shop"?>"  data-action="tracks">
+                    Главная</a>
+            </div>
+
             <div class="menu-item">
                 <a class="menu-a" href= "<?=SITE_ROOT . "new"?>"  data-action="tracks">
                     Новинки</a>

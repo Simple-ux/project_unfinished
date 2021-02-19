@@ -1,8 +1,8 @@
 <main>
 
-<div class="main_img">
-    <img src="/assets/img/main_img.png" width='100%'>
-</div>
+
+    <img class="main_img" src="/assets/img/main_img.png" width='100%'>
+
 
 <div class="new">
 

@@ -1,4 +1,4 @@
-
+<main class = "main_empty">
 <div>Добавить обувь</div>
 
 <form enctype = "multipart/form-data" method="post" action="<?=SITE_ROOT . "admin/add"?>">
@@ -39,3 +39,5 @@ echo "<option>" . $value["brand_name"] . "</option>";
 
 
 </form>
+
+</main>

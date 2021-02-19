@@ -17,6 +17,7 @@ header{
     justify-content: center;
     
     
+    
 
    
 }
@@ -43,10 +44,11 @@ a {
     display: flex;
     justify-content: center;
     width: 100%;
-    
 }
 
-
+.home{
+    display: none;
+}
 .menu-item {
     
     height: 50px;
@@ -234,3 +236,31 @@ color:black;
 
 
 
+@media screen and (max-width: 1200px)
+
+{ 
+
+    .menu_offset{
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-device-width : 400px)
+
+{ 
+
+    .main_img{
+        display: none;
+    }
+    .menu-logo{
+        display: none;
+    }
+    .logo-img{
+        display: none;
+    }
+    .home{
+        display: inline-block;
+    }
+
+}
