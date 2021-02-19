@@ -192,10 +192,11 @@ footer{
 
 .sneakers_container{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 10%;
+    
 }
 .sneakers_item{
     display: inline-block;
@@ -222,6 +223,15 @@ color:black;
 }
 main{
     height: 100%;
+}
+.new_h1{
+    display:flex;
+    justify-content: center;
+    font-family: Catamaran, Open Sans;
+     font-weight: bold;
+    font-size: 36px;
+    color:black;
+    padding: 30px;
 }
 
 

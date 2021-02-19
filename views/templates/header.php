@@ -31,11 +31,11 @@
                     Новинки</a>
             </div>
             <div class="menu-item">
-                <a class="menu-a" href="#" >
+                <a class="menu-a" href="<?=SITE_ROOT . "products"?>" >
                     Кросссовки</a>
             </div>
             <div class="menu-item">
-                <a class="menu-a" href="#" >
+                <a class="menu-a" href="<?=SITE_ROOT . "brands"?>" >
                     Бренды</a>
             </div>
             <div class="menu-item">

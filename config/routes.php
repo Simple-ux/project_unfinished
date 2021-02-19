@@ -6,9 +6,10 @@ return array(
 
   "shop" => "shop/index",   
 
-  "products/([0-9]+)" => "products/view/$1",
+  "products/([0-9]+)" => "products/viewOneProcuct/$1",
   "products" => "products/list",
   "brands" => "brands/list",
+  "brands/([a-zA-Z]+)" => "brands/viewOneBrand/$1",
   "new" => "new/list",
 
   "cart" => "cart/view",

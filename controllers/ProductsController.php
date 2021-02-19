@@ -18,14 +18,16 @@ include_once("./components/helper.php");
 
 
        public function actionList(){
-        echo "Список товаров";
+         $array = $this-> products -> GetProducts();
+         $title = "Sneakers";
+         $this->view -> GenerateView("product_list_view", $array, $title);
         return true;
        }
         
-       public function actionView($article){
+       public function actionViewOneProcuct($article){
             $array = $this-> products -> GetOneProduct($article);
             $title = $array[0]['sneakers_name'];
-            $this->view -> GenerateView("product_view", $array, $title);
+            $this->view -> GenerateView("product_one_view", $array, $title);
             
             
             
