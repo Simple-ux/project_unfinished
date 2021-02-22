@@ -38,15 +38,20 @@ public function actionAdminView(){
 
 public function actionAddShoes(){
     
+    
     if($_FILES['picture']['type'] === "image/png"){
     $this -> admin -> addSneakers($_POST);
-    header('Location:  /shop ');
-}
+    header('Location:  /admin ');
+    
+        
+   }
     else{
       echo "Изображение должно быть в формате PNG";
       
     }
-      
+  
+  
+  
 }
 
 }

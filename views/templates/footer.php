@@ -1,6 +1,5 @@
 
-
-<footer >
+<footer>
 <div class="footer_heading">
     Контакты
 </div>

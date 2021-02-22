@@ -1,5 +1,5 @@
-<?php session_start();?>
-<main>
+
+<main class = "main_empty">
 
 <link rel="stylesheet" href="./assets/css/auth.css">  
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>

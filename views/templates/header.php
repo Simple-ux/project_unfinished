@@ -5,6 +5,7 @@
     <title><?= $title ?></title>
     <link  href="/assets/css/normalize.css" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/libs/flickity/css/flickity.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
     <link  href="/assets/css/style.css" rel="stylesheet"> 
     
    

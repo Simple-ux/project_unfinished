@@ -41,10 +41,15 @@ class Products{
 
         $result = mysqli_query($db, $query);
         $products_result = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        if(empty($products_result)){
+            return false;
+        }
         $availableSizes = $this -> GetSizes($products_result);
         $products_result[0]["availableSizes"] = $availableSizes;
-
+        
         return  $products_result;
+        
+        
     }
 
 

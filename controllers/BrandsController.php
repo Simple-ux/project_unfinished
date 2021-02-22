@@ -26,11 +26,17 @@ include_once("./components/helper.php");
        
       
        public function actionViewOneBrand($brand){
-            $title = $brand;
+            
             $array = $this -> brands -> GetOneBrandProducts($brand);
-
+            if(empty($array)){
+               
+                 header("HTTP/1.0 404 Not Found");
+                 
+            }
+            else{
+               $title = $brand;
             $this->view -> GenerateView("brand_one_view", $array, $title);
-
+            }
        }
 
  }

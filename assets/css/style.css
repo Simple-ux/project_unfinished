@@ -4,6 +4,7 @@ html{
 body{
     height: 100%;
     background-color: #F4F1F0;
+    
 
    
     
@@ -36,6 +37,12 @@ header{
 
 a { 
     text-decoration: none;
+    color:white;
+}
+a:hover { 
+    text-decoration: none;
+    color:white;
+    
 }
 
 
@@ -233,6 +240,66 @@ color:black;
     color:black;
     padding: 30px;
 }
+li{
+  
+    font-family: Catamaran, Open Sans;
+     font-weight: bold;
+    font-size:20px;
+    color:black;
+    padding-top: 10px;
+} 
+
+.box{
+    position: relative;
+    
+   }
+   .box img{
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease 0s;
+   }
+   .box:hover img{
+    filter: brightness(0.4);
+   }
+   .box .boxContent{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    transform: scale(0, 1);
+    transition: all 0.35s ease 0s;
+   }
+   .box:hover .boxContent{
+    transform: scale(1);
+   }
+   .box .title{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    margin: 23% 0 20px;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.35s ease 0s;
+   }
+   .box .post{
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.35s ease 0s;
+   }
+   .box:hover .title,
+   .box:hover .post{
+    transform: translate3d(0, 0, 0);
+   }
+  
 
 
 
@@ -264,3 +331,6 @@ color:black;
     }
 
 }
+@media only screen and (max-width: 990px){
+    .box{ margin-bottom: 25px; }
+   }

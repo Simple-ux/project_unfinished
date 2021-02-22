@@ -86,16 +86,16 @@ include_once("./components/helper.php");
 
             if($checkIfLoginExists == true){
                   // если логин существует, отобразить ошибку
-                  
-                  setcookie('login_error', '1');
                   header('Location:  /auth ' );
+                  setcookie('login_error', '1');
+                  
                   
                  
             }
             else if($reCaptchaCheck == false){
-  
-                  setcookie('captcha_error', '1');
                   header('Location:  /auth ' );
+                  setcookie('captcha_error', '1');
+                  
             }
             
             

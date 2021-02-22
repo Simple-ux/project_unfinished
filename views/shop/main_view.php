@@ -11,6 +11,7 @@
 
 </div>
 
+
 <div class="carousel_container">
 
 <div class="carousel" data-flickity='{ "groupCells": true }'>
@@ -21,9 +22,17 @@
         
         if($value['sneakers_new'] == 1 && $i < 10){
          $i++;  
-       echo '<div class="carousel-cell">
+         
+       echo '<div class="carousel-cell box">
+       
        <a href="' . SITE_ROOT . 'products/' . $value['article_name']. '" >
+       
        <img src="/assets/img/sneakers/' . $value['sneakers_img'] . '.png" height="256px">
+       <div class="boxContent">
+ <h3 class="title">' . $value['sneakers_name'] . '</h3>
+ <span class="post">' . $value['sneakers_price'] . '<span> ₽</span></span>
+ </div>
+       
        </a>
         </div>';
         }

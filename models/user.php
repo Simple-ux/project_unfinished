@@ -131,7 +131,7 @@ include_once("./components/recaptchalib.php");
             $helper = new Helper();
             $isAdmin = $helper -> isAdmin();
             if($isAdmin == 1){
-              setcookie('admin', "" , 1);
+              setcookie('admin', "0" );
             }
             
 

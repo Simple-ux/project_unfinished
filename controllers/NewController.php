@@ -16,7 +16,7 @@ include_once("./components/helper.php");
       }
 
        public function actionList(){
-        $title = "New sneakers";
+        $title = "New";
        $array = $this-> newProducts -> GetNewProducts();
 
        $this->view -> GenerateView("new_view", $array, $title);

@@ -58,9 +58,7 @@ class Helper{
                         
                         mysqli_query($db, $query);
                         setcookie('token', $new_token, time() + 2*24*60);
-                        if($_COOKIE['admin'] == 1){
-                        setcookie('admin', 0);
-                        }
+                        
                     }
                     
                 }

@@ -35,10 +35,12 @@
         $r = preg_replace("~$uriPattern$~", $path, $uri);
 
         
+
+
         if(preg_match("~^$uriPattern$~", $uri)){
             
             $segments = explode("/", $r);
-
+            
             $controllerName = ucfirst(array_shift($segments)."Controller");
             
             $actionName = "action".ucfirst(array_shift($segments));
@@ -52,7 +54,8 @@
             if(file_exists($controllerFile)){
                 include_once($controllerFile);
             }
-         
+            
+            
             
             
             setcookie('login_error', '0');
@@ -68,12 +71,12 @@
               
                 break;
             }
-            
+               
         }
+
         
-        else {
-          header('HTTP/1.1 404 Not Found ');
-        }
+        
+        
         
         }
       }

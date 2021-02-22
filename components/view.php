@@ -16,7 +16,7 @@ class View{
         $isAuthorized = $this -> helper -> isAuthorized();
         $isAdmin = $this -> helper -> isAdmin();
 
-        include_once("./views/templates/header.php");
+        
 
         
       if($data != 0){
@@ -26,7 +26,7 @@ class View{
 
         }
     }
-        
+        include_once("./views/templates/header.php");
         include_once("./views/shop/" . $content_view . ".php");
         include_once("./views/templates/footer.php");
      }

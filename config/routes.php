@@ -15,7 +15,7 @@ return array(
   "cart" => "cart/view",
   
   "admin" => "admin/adminView",
-  "admin/add" => "admin/AddShoes",
+  "admin/add" => "admin/addShoes",
 
   "auth" => "user/auth",
   "login" => "user/login",

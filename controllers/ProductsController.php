@@ -25,10 +25,15 @@ include_once("./components/helper.php");
        }
         
        public function actionViewOneProcuct($article){
+
             $array = $this-> products -> GetOneProduct($article);
+            if ($array == false){
+               header("HTTP/1.1 404 Not Found");
+            }
+            else{
             $title = $array[0]['sneakers_name'];
             $this->view -> GenerateView("product_one_view", $array, $title);
-            
+            }
             
             
             return true;
