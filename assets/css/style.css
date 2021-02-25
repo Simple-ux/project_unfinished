@@ -371,6 +371,20 @@ li{
        
        
    }
+  .sum{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: Catamaran, Open Sans;
+  font-weight: 400;
+   font-size:20px;
+   color:black;
+  }
+  .cart_container{
+    margin-left: 50px;
+}
+   .cart_item{
+       margin-top: 50px;
+   }
 
 
   

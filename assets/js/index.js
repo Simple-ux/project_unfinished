@@ -166,8 +166,9 @@ if(document.querySelector(".cart") != null){
 function cartView(){
   
   let view = document.querySelector(".cart");
-  
+  let cartImg = document.querySelector(".cart_img");
   let cart = JSON.parse(localStorage.getItem("cart"));
+ 
   let fullPrice = 0;
   
   
@@ -176,18 +177,21 @@ function cartView(){
   
    
    fullPrice += Number(item['price']);
-   view.innerHTML += "<div>" + "<img src= ./assets/img/sneakers/" + item['img'] + ".png width=150px> " + "</div>";
+   
+   view.innerHTML += "<div class = 'cart_item'><div><img src= ./assets/img/sneakers/" + item['img'] + ".png width=150px> </div>";
+   view.innerHTML += "<div><span><b>" + item['name'] + "</b></span></div>";
    view.innerHTML += "<div>Артикул товара: <span>" + item['article'] + "</span></div>";
    view.innerHTML += "<div>Бренд: <span>" + item['brand'] + "</span></div>";
    view.innerHTML += "<div> <span>Размер : </span><span>" + item['size'] + "</span> </div>";
-   view.innerHTML += "<div>Название: <span>" + item['name'] + "</span></div>";
+   
    view.innerHTML += "<div>Цена: <span>" + item['price'] + "</span></div>";
    
    view.innerHTML += "<button   onclick =  deleteFromCart(" + item['id'] + ")  >Удалить из корзины </button>";
    
+   
   })
 
-  view.innerHTML += "<div> сумма " + fullPrice + "</div>";
+  document.querySelector(".sum").innerHTML += "Cумма: <b> " + fullPrice + "</b>";
   
 
 }

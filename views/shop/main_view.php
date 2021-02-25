@@ -67,7 +67,7 @@ $i=0;
        if($isAdmin){
        echo '
        <div class="sneakers_item_icons"> 
-       <img src="/assets/img/icons/edit.png" height=20px> 
+       <a href = ' . SITE_ROOT . 'admin/edit/' . $value['article_name']. '><img src="/assets/img/icons/edit.png" height=20px> </a>
        <a onclick="return confirm()" href = ' . SITE_ROOT . 'admin/delete/' . $value['article_name']. ' ><img src="/assets/img/icons/delete.png" width=20px></a>
        </div> ';
        }

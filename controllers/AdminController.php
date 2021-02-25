@@ -59,9 +59,40 @@ public function actionDeleteShoes($article){
           $delete = $this -> admin -> deleteSneakers($article);
           if($delete  == true){
               header('Location:  /shop ');
+            }
       }
-}
       
 }
+
+public function actionEditShoesView($article){
+        $isAdmin = $this -> helper -> isAdmin();
+        if($isAdmin){
+
+            
+                  $oneProduct = $this->products -> GetOneProduct($article);
+                  $title = "Edit";
+                  $array = $oneProduct;
+                  $this->view -> GenerateView("edit_view", $array, $title);
+                 
+            }
+            
+        
+
+}
+public function actionUpdateShoes(){
+      $isAdmin = $this -> helper -> isAdmin();
+        if($isAdmin){
+
+            if(!empty($_POST)){
+      
+               $update = $this -> admin -> editSneakers($_POST);
+                if($update  == true){
+                  header('Location:  /shop ');
+                }
+            }
+                 
+            }
+}
+
 
 }

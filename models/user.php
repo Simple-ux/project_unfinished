@@ -119,7 +119,7 @@ include_once("./components/recaptchalib.php");
 
           //  Logout
           public function Logout(){
-
+            session_destroy();
             $db = connect();
             $query = "
 				DELETE FROM `connects`

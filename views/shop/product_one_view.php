@@ -30,11 +30,13 @@
   else{
       echo "<div><span> Нет доступных размеров </span></div>";
   }
+  
 ?>
 
  <div><button type="submit" onclick="addToCart(); counter();" class="btn-addToCart">В корзину</button></div>
  </div>
 </div>
+
 
  <form>
  

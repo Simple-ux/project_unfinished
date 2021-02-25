@@ -22,7 +22,9 @@ class UserController
       public function actionAuth()
       {
             $title = "Authorization";
-
+            setcookie('login_error', '0');
+            setcookie("error_auth", '0');
+            setcookie("captcha_error", '0');
 
 
             // LogOut, если авторизован

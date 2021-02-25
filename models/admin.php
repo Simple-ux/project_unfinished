@@ -76,6 +76,25 @@ class Admin{
     return true;
 
     }
+    public function editSneakers($data){
+        $info = $data;
+        print_r($info);
+        $db = connect();
+        $query = "
+       UPDATE `sneakers`
+       LEFT JOIN `article`
+       ON sneakers.sneakers_article_id = article.article_id
+       SET `sneakers_name` = '$info[product_name]',
+        `sneakers_price` = $info[product_price],
+        `sneakers_new` = $info[product_new],
+        `sneakers_gender_id` = $info[product_gender]
+       WHERE `article_name` = $info[product_article]
+    ";
+    $result = mysqli_query($db, $query);
+    
+    return true;
+
+    }
 
    
 }

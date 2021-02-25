@@ -13,8 +13,8 @@ foreach($array as $value){
        if($isAdmin){
         echo '</a>
         <div class="sneakers_item_icons"> 
-        <img src="/assets/img/icons/edit.png" height=20px> 
-        <a onclick="return confirm() href = ' . SITE_ROOT . 'admin/delete/' . $value['article_name']. ' ><img src="/assets/img/icons/delete.png" width=20px></a>
+        <a href = ' . SITE_ROOT . 'admin/edit/' . $value['article_name']. '><img src="/assets/img/icons/edit.png" height=20px> </a>
+        <a onclick="return confirm()" href = ' . SITE_ROOT . 'admin/delete/' . $value['article_name']. ' ><img src="/assets/img/icons/delete.png" width=20px></a>
         </div> ';
         }
         echo ' </div>';

@@ -16,7 +16,7 @@ echo "<option>" . $value["brand_name"] . "</option>";
 
 <div>
 <label>Название продукта</label>
-<input type="text"  name="product_name" required/><br>
+<input type="text"  name="product_name"  required/><br>
 </div>
 
 <div>
