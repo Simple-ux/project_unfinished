@@ -1,10 +1,9 @@
 <main class = "main_empty">
-<div>Добавить обувь</div>
+<div><b>Добавить обувь</b></div>
 
 <form enctype = "multipart/form-data" method="post" action="<?=SITE_ROOT . "admin/add"?>">
-
+<span>Название бренда: </span>
 <select name="product_brand">
-
 <?php 
 
 foreach($array as $value){
@@ -12,13 +11,18 @@ echo "<option>" . $value["brand_name"] . "</option>";
 }
 
 ?>
+
 </select>
-<br>
+
+<div>
 <label>Название продукта</label>
 <input type="text"  name="product_name" required/><br>
+</div>
+
+<div>
 <label>Цена</label>
 <input type="number" min="0"  name="product_price" required/><br>
-<br>
+</div>
 
 <select name="product_new">
 <option value = "0">Старая коллекция</option>

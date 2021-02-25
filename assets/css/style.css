@@ -61,6 +61,7 @@ a:hover {
     height: 50px;
     width: 100px;
     padding: auto;
+    position: relative;
     
     
 }
@@ -287,7 +288,7 @@ li{
    }
    .box .post{
     display: block;
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
@@ -299,6 +300,79 @@ li{
    .box:hover .post{
     transform: translate3d(0, 0, 0);
    }
+   
+   .sneakers_item_icons{
+       display: flex;
+       justify-content: space-around;
+       margin-bottom: 40px;
+       margin-top: -20px;
+    
+   }
+   .cart_icon{
+       margin-top: 12px;
+   }
+   .counter{
+       
+       position: absolute;
+       top: 30px;
+       right: 30px;
+       background-color: #fff;
+       color: black;
+       height: 15px;
+       width: 15px;
+       border-radius: 50%;
+       font-size: 10px;
+       
+   }
+   .counter_num{
+       position: absolute;
+       top: -18px;
+       right: 4px;
+       font-weight: 700;
+   }
+   .hidden{
+       display: none;
+   }
+
+   .container_one_view{
+       display: flex;
+       justify-content: center;
+       padding-top: 100px;
+
+      
+      
+   }
+   .info_one_view{
+       margin-left: 50px;
+       font-family: Catamaran, Open Sans;
+     font-weight: 400;
+      font-size:20px;
+      color:black;
+   }
+   .info_one_view div{
+    padding-bottom: 20px;
+   }
+   .btn-addToCart{
+    background-color: #BA262D; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+     
+   }
+
+   .btn-addToCart:hover{
+       cursor: pointer;
+       background-color: #d42932; 
+       
+       
+   }
+
+
   
 
 

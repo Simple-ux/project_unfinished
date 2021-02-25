@@ -146,6 +146,16 @@ function addToCart(){
   console.log(JSON.parse(localStorage.getItem("cart")));
   
 }
+
+document.addEventListener("DOMContentLoaded", counter());
+
+
+function counter(){
+    let cart = JSON.parse(localStorage.getItem("cart"));
+      let counter = cart.length;
+    document.querySelector(".counter_num").innerHTML = counter;
+}
+
 if(document.querySelector(".cart") != null){
  document.addEventListener("DOMContentLoaded",cartView());
  
@@ -160,9 +170,11 @@ function cartView(){
   let cart = JSON.parse(localStorage.getItem("cart"));
   let fullPrice = 0;
   
-
+  
   cart.forEach(function(item){
-   console.log(item);
+  
+  
+   
    fullPrice += Number(item['price']);
    view.innerHTML += "<div>" + "<img src= ./assets/img/sneakers/" + item['img'] + ".png width=150px> " + "</div>";
    view.innerHTML += "<div>Артикул товара: <span>" + item['article'] + "</span></div>";
@@ -174,6 +186,7 @@ function cartView(){
    view.innerHTML += "<button   onclick =  deleteFromCart(" + item['id'] + ")  >Удалить из корзины </button>";
    
   })
+
   view.innerHTML += "<div> сумма " + fullPrice + "</div>";
   
 

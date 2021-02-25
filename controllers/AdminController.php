@@ -49,9 +49,19 @@ public function actionAddShoes(){
       echo "Изображение должно быть в формате PNG";
       
     }
-  
-  
-  
+
+}
+
+public function actionDeleteShoes($article){
+      $isAdmin = $this -> helper -> isAdmin();
+      if($isAdmin){
+
+          $delete = $this -> admin -> deleteSneakers($article);
+          if($delete  == true){
+              header('Location:  /shop ');
+      }
+}
+      
 }
 
 }

@@ -62,5 +62,20 @@ class Admin{
     return true; 
     }
 
+    public function deleteSneakers($article){
+
+        $db = connect();
+        $query = "
+        DELETE `sneakers` FROM `sneakers`
+       LEFT JOIN `article`
+       ON sneakers.sneakers_article_id = article.article_id
+       WHERE `article_name` = '$article'
+    ";
+    $result = mysqli_query($db, $query);
+    
+    return true;
+
+    }
+
    
 }

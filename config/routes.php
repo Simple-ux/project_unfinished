@@ -16,6 +16,8 @@ return array(
   
   "admin" => "admin/adminView",
   "admin/add" => "admin/addShoes",
+  "admin/delete/([0-9]+)" => "admin/deleteShoes/$1",
+  "admin/edit/([0-9]+)" => "admin/editShoes/$1",
 
   "auth" => "user/auth",
   "login" => "user/login",

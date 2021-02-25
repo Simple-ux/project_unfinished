@@ -4,10 +4,10 @@
  
     <title><?= $title ?></title>
     <link  href="/assets/css/normalize.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="./assets/libs/flickity/css/flickity.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="/assets/libs/flickity/css/flickity.css"> 
+  
     <link  href="/assets/css/style.css" rel="stylesheet"> 
-    
+  
    
     <script src="/assets/libs/flickity/js/flickity.pkgd.min.js"></script>
     <script src="/assets/js/index.js" defer></script>
@@ -91,7 +91,9 @@
   
             <div class="menu-item">
                 <a class="menu-a" href="<?=SITE_ROOT . "cart"?>">
-                    Корзина
+                    <img src="/assets/img/icons/cart.svg" width="26px" class= "cart_icon">
+                    <div class="counter"><span class="counter_num">0</span></div>
+                    <!-- Корзина -->
                 </a>
             
                 </div> 
